@@ -14,7 +14,7 @@ CHECK_INTERVAL = 300  # Time between checks in seconds (5 minutes)
 last_status = "UNKNOWN"
 DISCORD_WEBHOOK_URL = os.getenv(
     "DISCORD_WEBHOOK_URL",
-    "https://discord.com/api/webhooks/YOUR_WEBHOOK_URL" # For security, set your actual Discord webhook URL as an environment variable or replace the placeholder here.
+    "https://discord.com/api/webhooks/YOUR_WEBHOOK_URL"
 ) 
 
 # Global logger 
