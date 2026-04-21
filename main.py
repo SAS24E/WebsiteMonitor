@@ -14,8 +14,8 @@ CHECK_INTERVAL = 300  # Time between checks in seconds (5 minutes)
 last_status = "UNKNOWN"
 DISCORD_WEBHOOK_URL = os.getenv(
     "DISCORD_WEBHOOK_URL",
-    "https://discord.com/api/webhooks/1496242682442416178/DzpxgN4qqXhstgczSpK9FmcsJpjbU5_PaFGobsEkIS_CGqw7uUwzbFzAkdB63BzanQTc"
-) # will replace with env variable in production, hardcoded for testing
+    "https://discord.com/api/webhooks/YOUR_WEBHOOK_URL" # For security, set your actual Discord webhook URL as an environment variable or replace the placeholder here.
+) 
 
 # Global logger 
 logger = logging.getLogger(__name__)
@@ -42,7 +42,7 @@ def send_discord_notification(message):
         log_status(f"Discord response status: {resp.status_code}", "info")
         if resp.status_code != 204:
             log_status(f"Failed to send Discord notification: {resp.status_code} {resp.text}", "error")
-            
+
     except Exception as e:
         log_status(f"Error sending Discord notification: {e}", "error")
 

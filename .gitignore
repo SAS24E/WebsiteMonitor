@@ -1,2 +1,4 @@
 /.venv
 /luxline_monitor.log
+.env
+.env.local
