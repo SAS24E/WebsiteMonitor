@@ -6,6 +6,8 @@ services:
     container_name: luxline-monitor
     environment:
       - DISCORD_WEBHOOK_URL=${DISCORD_WEBHOOK_URL}
+    volumes:
+      - ./logs:/app
     restart: always
     logging:
       driver: "json-file"
