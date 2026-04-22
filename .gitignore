@@ -1,4 +1,5 @@
 /.venv
 /luxline_monitor.log
 .env
-.env.local
+.env.localluxline_monitor.log
+luxline_monitor.log
