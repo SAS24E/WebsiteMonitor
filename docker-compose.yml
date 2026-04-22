@@ -7,7 +7,7 @@ services:
     environment:
       - DISCORD_WEBHOOK_URL=${DISCORD_WEBHOOK_URL}
     volumes:
-      - ./logs:/app
+      - ./logs:/app/logs
     restart: always
     logging:
       driver: "json-file"

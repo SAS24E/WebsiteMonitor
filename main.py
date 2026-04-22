@@ -25,7 +25,7 @@ def setup_logger():
     Set up logging to a file with timestamps.
     """
     logging.basicConfig(
-        filename="luxline_monitor.log",
+        filename="logs/luxline_monitor.log",
         level=logging.INFO,
         format="%(asctime)s %(levelname)s: %(message)s"
         )
